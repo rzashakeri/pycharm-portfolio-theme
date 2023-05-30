@@ -344,16 +344,6 @@ table {
     box-sizing: border-box;
 }
 
-#add-content {
-    float: right;
-}
-
-#remove-content {
-    width: 80px;
-    float: right;
-    background-color: salmon;
-}
-
 /* ================================================ */
 /* sidebar */
 /* ================================================ */
