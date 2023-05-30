@@ -274,24 +274,6 @@ table {
 
 
 /* ================================================ */
-/* main */
-/* ================================================ */
-
-
-#main {
-    flex-basis: 0;
-    flex-grow: 1;
-    min-width: 0;
-
-    background: #282c34;
-    height: 100%;
-    flex-direction: row;
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-
-/* ================================================ */
 /* wrapper */
 /* ================================================ */
 
@@ -447,11 +429,19 @@ table {
 /* main */
 /* ================================================ */
 
-
 #main {
-    display: flex;
-    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
+
+    background: #282c34;
+    height: 100%;
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
+
 
 #main-header {
     display: flex;
@@ -466,13 +456,13 @@ table {
     padding: 0 10rem;
 }
 
-#main-topbar {
+#main-top-bar {
     background-color: #21252b;
     border-bottom: 1px solid rgba(233, 233, 233, 0.333);
     height: 30px;
 }
 
-#main-topbar-item {
+#main-top-bar-item {
     background-color: #3d424b;
     padding: 6px;
     display: flex;
@@ -486,7 +476,7 @@ table {
 }
 
 
-#main-topbar-item-text {
+#main-top-bar-item-text {
     color: var(--color-text-primary);
 }
 
@@ -518,6 +508,10 @@ table {
 .arrow-expand-icon {
     color: #abb2bf;
 }
+
+/* ================================================ */
+/* footer */
+/* ================================================ */
 
 
 #footer {
