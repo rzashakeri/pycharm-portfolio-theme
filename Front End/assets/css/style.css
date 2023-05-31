@@ -195,7 +195,7 @@ table {
     font-weight: 200
 }
 
-.navbar-toolbox {
+.breadcrumb {
     display: flex;
     justify-content: space-between;
     padding: 4px 2px;
@@ -215,25 +215,25 @@ table {
     text-decoration: none;
 }
 
-.navbar-toolbox-head {
+.breadcrumb-head {
     display: flex;
     gap: 5px;
 }
 
 
-.navbar-toolbox-head-item {
+.breadcrumb-head-item {
     display: flex;
     align-items: center;
     gap: 5px;
     margin-left: 5px;
 }
 
-.navbar-toolbox-title {
+.breadcrumb-title {
     font-size: 1.2rem;
     color: var(--color-text-primary);
 }
 
-.navbar-toolbox-head .first {
+.breadcrumb-title .first {
     font-weight: bold;
 }
 
