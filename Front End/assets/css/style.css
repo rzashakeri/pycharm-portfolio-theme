@@ -637,4 +637,6 @@ table {
     text-align: justify;
 }
 
-
+.about-description a {
+    text-decoration: none;
+}
