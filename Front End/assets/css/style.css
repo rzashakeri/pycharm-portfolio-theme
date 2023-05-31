@@ -524,6 +524,22 @@ table {
     text-decoration: none;
 }
 
+.main-menu-head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-menu-head-title {
+    color: #abb2bf;
+    font-size: 2.5rem;
+}
+
+.main-menu-head-description {
+    color: rgba(233, 233, 233, 0.333);
+    font-size: 1.5rem;
+}
+
 #codex {
     font-size: 4rem;
     color: var(--color-text-primary);
