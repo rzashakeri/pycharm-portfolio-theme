@@ -36,12 +36,12 @@ function showContent() {
 }
 
 
-$("#codex").codex({
+$(".main-menu-head-title").codex({
     effect: "charbychar",
     reveal: 200, // the number of miliseconds
 });
 
-new TypeIt("#main-about-text", {
+new TypeIt(".main-menu-head-description", {
     speed: 10,
     waitUntilVisible: true,
 }).go();
