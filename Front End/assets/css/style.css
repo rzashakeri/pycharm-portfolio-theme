@@ -541,3 +541,14 @@ table {
     color: rgba(233, 233, 233, 0.333);
     margin-right: 10px;
 }
+
+#copyright {
+    color: #abb2bf;
+    margin-right: 15px;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #fff;
+}
+
