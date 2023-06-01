@@ -193,7 +193,8 @@ table {
 .navbar-title {
     color: var(--color-text-secondary);
     font-size: 1.2rem;
-    font-weight: 200
+    font-weight: 200;
+    margin-right: 15rem;
 }
 
 .breadcrumb {
@@ -214,6 +215,24 @@ table {
 
 .navbar-social-icon {
     text-decoration: none;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-button {
+    padding: 7px;
+
+}
+
+.navbar-close-button {
+    margin-right: 5px;
+}
+
+.navbar-close-button:hover {
+    background: #d22a2a;
 }
 
 .breadcrumb-head {
