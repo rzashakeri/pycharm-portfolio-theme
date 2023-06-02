@@ -13,7 +13,7 @@
     --color-header: #21252b;
     --color-text-grey: #E9E9E954;
     --color-text-secondary: #848890;
-    --color-text-light-grey: #abb2bf ;
+    --color-text-light-grey: #abb2bf;
     --color-text-primary: #dbdbdb;
 }
 
@@ -460,7 +460,6 @@ table {
     flex-basis: 0;
     flex-grow: 1;
     min-width: 0;
-    overflow: scroll;
     background: #282c34;
     height: 100%;
     flex-direction: row;
@@ -481,6 +480,7 @@ table {
     flex-direction: column;
     gap: 3rem;
     padding: 0 10rem;
+    overflow: scroll;
 }
 
 #main-top-bar {
@@ -629,14 +629,12 @@ table {
 /* about */
 /* ================================================ */
 
-
 .about-section {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin: 3rem 1rem;
 }
-
 
 .about-title {
     font-family: 'Fira Code', monospace;
@@ -658,4 +656,65 @@ table {
 
 .about-description a {
     text-decoration: none;
+}
+
+
+/* ================================================ */
+/* skills */
+/* ================================================ */
+
+.skills-section {
+    margin: 5rem 0;
+}
+
+.skills-head-title {
+    font-family: 'Fira Code', monospace;
+    font-size: 4rem;
+    color: var(--color-text-light-grey);
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.skill-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: var(--color-text-grey);
+}
+
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: var(--color-text-grey);
+}
+
+.skill-items {
+    margin-top: 3rem;
+}
+
+.skill-item {
+    display: flex;
+    gap: 35px;
+    margin-top: 3rem;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.skill-icon {
+    width: 50px;
 }
