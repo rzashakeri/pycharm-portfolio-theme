@@ -229,10 +229,6 @@ table {
 
 }
 
-.navbar-close-button {
-    margin-right: 5px;
-}
-
 .navbar-close-button:hover {
     background: #d22a2a;
 }
