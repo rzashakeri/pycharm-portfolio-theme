@@ -61,10 +61,10 @@ function ReadMoreAboutText() {
     }
 }
 
-function changIcon() {
-    let element = document.querySelector(".arrow-expand-icon");
+function changFirstHeaderIcon() {
+    let element = document.querySelector(".sidebar-first-header-icon");
     let sidebarItems = document.querySelector(".sidebar-items");
-    if (element.className == "arrow-expand-icon") {
+    if (element.className == "sidebar-first-header-icon") {
         element.setAttribute(
             "src",
             "./assets/images/icons/findAndShowNextMatches.svg"
@@ -73,7 +73,7 @@ function changIcon() {
         sidebarItems.removeAttribute("style");
     } else {
         element.setAttribute("src", "./assets/images/icons/play_forward.svg");
-        element.className = "arrow-expand-icon";
+        element.className = "sidebar-first-header-icon";
         sidebarItems.setAttribute("style", "display: none;");
     }
 }
