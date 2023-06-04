@@ -823,6 +823,14 @@ table {
     padding: 5px;
 }
 
+.fa-star {
+    color: yellow;
+}
+
+.fa-heart {
+    color: red;
+}
+
 .card-heading-link {
     color: var(--color-text-primary);
     text-decoration: none;
