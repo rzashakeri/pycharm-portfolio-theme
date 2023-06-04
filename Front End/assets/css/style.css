@@ -744,6 +744,7 @@ table {
 }
 
 .card {
+    cursor: pointer;
     position: relative;
     width: 250px;
     height: 250px;
@@ -803,4 +804,30 @@ table {
 .card.is-out {
     transform: rotateX(0) rotateY(0) !important;
     transition-duration: 1s;
+}
+
+/* ================================================ */
+/* badges */
+/* ================================================ */
+
+
+.badges {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 17px;
+}
+
+.badge {
+    background-color: var(--color-text-grey);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card-heading-link {
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+.card-heading-link:hover {
+    color: var(--color-text-secondary);
 }
