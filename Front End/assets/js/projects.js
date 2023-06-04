@@ -41,3 +41,8 @@
 
 //Set plugin on cards
 $(".card").tilt();
+
+new TypeIt(".project-head-text", {
+    speed: 10,
+    waitUntilVisible: true,
+}).go();
