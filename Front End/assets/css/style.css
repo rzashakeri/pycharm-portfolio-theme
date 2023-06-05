@@ -296,6 +296,14 @@ table {
     color: var(--color-text-light-grey);
 }
 
+.fa-star {
+    color: yellow;
+}
+
+.fa-heart {
+    color: red;
+}
+
 /* ================================================ */
 /* wrapper */
 /* ================================================ */
@@ -743,6 +751,11 @@ table {
     /*align-items: center;*/
 }
 
+/* ================================================ */
+/* cards */
+/* ================================================ */
+
+
 .card {
     cursor: pointer;
     position: relative;
@@ -806,6 +819,15 @@ table {
     transition-duration: 1s;
 }
 
+.card-heading-link {
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+.card-heading-link:hover {
+    color: var(--color-text-secondary);
+}
+
 /* ================================================ */
 /* badges */
 /* ================================================ */
@@ -823,19 +845,77 @@ table {
     padding: 5px;
 }
 
-.fa-star {
-    color: yellow;
+/* ================================================ */
+/* contact us */
+/* ================================================ */
+
+
+.contact-us {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.fa-heart {
-    color: red;
+.contact-us-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+    background: #323844;
+    padding: 3rem;
+    border-radius: 1rem;
 }
 
-.card-heading-link {
+.contact-us-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-us-button {
+    padding: 25px 30px;
+    background-color: var(--color-header);
+    color: #03e9f4;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.contact-us-button:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+
+label {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
     color: var(--color-text-primary);
-    text-decoration: none;
 }
 
-.card-heading-link:hover {
-    color: var(--color-text-secondary);
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-header);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background: var(--color-header);
+}
+
+::placeholder {
+  color: var(--color-text-primary);
 }
