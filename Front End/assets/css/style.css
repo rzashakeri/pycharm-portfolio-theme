@@ -715,6 +715,7 @@ table {
     display: flex;
     gap: 35px;
     margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .skills-content {
