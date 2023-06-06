@@ -34,7 +34,7 @@ resizer.addEventListener("mousedown", (event) => {
 
 setInterval(() => $("#dateTime").text(new Date().toLocaleString()), 1000);
 
-function changFirstHeaderIcon() {
+function changeFirstHeaderIcon() {
     let element = document.querySelector(".sidebar-first-header-icon");
     let sidebarItems = document.querySelector(".sidebar-items");
     if (element.className === "sidebar-first-header-icon") {
@@ -50,6 +50,24 @@ function changFirstHeaderIcon() {
         sidebarItems.setAttribute("style", "display: none;");
     }
 }
+
+function changeProjectsIcon() {
+    let element = document.querySelector(".sidebar-projects-icon");
+    let sidebarItems = document.querySelector(".sidebar-projects-content");
+    if (element.className === "sidebar-projects-icon") {
+        element.setAttribute(
+            "src",
+            "./assets/images/icons/findAndShowNextMatches.svg"
+        );
+        element.className += " open";
+        sidebarItems.removeAttribute("style");
+    } else {
+        element.setAttribute("src", "./assets/images/icons/play_forward.svg");
+        element.className = "sidebar-projects-icon";
+        sidebarItems.setAttribute("style", "display: none;");
+    }
+}
+
 
 let docTitle = document.title;
 window.addEventListener("blur", () => {
