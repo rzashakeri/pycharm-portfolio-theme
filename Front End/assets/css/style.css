@@ -133,6 +133,7 @@ section {
 
 body {
     line-height: 1;
+    overflow: hidden;
 }
 
 ol,
@@ -157,6 +158,11 @@ table {
     border-spacing: 0;
 }
 
+::selection {
+    background-color: var(--color-header);
+    color: var(--color-text-primary);
+}
+
 /* ================================================ */
 /* header */
 /* ================================================ */
@@ -169,6 +175,17 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar-logo-items-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 57%;
+}
+
+.navbar-logo-and-items {
+    display: flex;
 }
 
 .navbar-items {
@@ -189,14 +206,13 @@ table {
 }
 
 .navbar-pycharm-logo {
-    margin: 1px 1px;
+    margin: 1px 7px;
 }
 
 .navbar-title {
     color: var(--color-text-secondary);
     font-size: 1.2rem;
     font-weight: 200;
-    margin-right: 15rem;
 }
 
 .breadcrumb {
@@ -232,6 +248,18 @@ table {
 .navbar-close-button:hover {
     background: #d22a2a;
 }
+
+
+@media (max-width: 768px) {
+    .navbar-items {
+        display: none;
+    }
+
+    .navbar-logo-items-title {
+        justify-content: flex-start;
+    }
+}
+
 
 /* ================================================ */
 /* breadcrumb */
@@ -554,6 +582,7 @@ table {
     display: flex;
     gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .main-menu-item-text {
@@ -575,6 +604,7 @@ table {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 180px;
 }
 
 .main-menu-head-title {
@@ -929,8 +959,34 @@ input[type=text], input[type=email], textarea {
     margin-bottom: 16px;
     resize: vertical;
     background: var(--color-header);
+    color: var(--color-text-light-grey)
 }
 
 ::placeholder {
-    color: var(--color-text-primary);
+    color: var(--color-text-light-grey);
+}
+
+/* ================================================ */
+/* social media */
+/* ================================================ */
+
+
+.social-media {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    right: 13px;
+    background-color: var(--color-header);
+    z-index: 99999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    border-radius: 3px;
+    gap: 10px;
+    padding: 0 8px;
+}
+
+.fa-brands.fa-instagram {
+    width: 10px;
 }
