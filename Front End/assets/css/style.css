@@ -460,6 +460,20 @@ table {
     margin-left: 50px;
 }
 
+.sidebar-projects-head {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.sidebar-item-icon.sidebar-project-icon {
+    margin-left: 71px;
+}
+
+.sidebar-projects-icon {
+    margin-left: 29px;
+}
+
 /* ================================================ */
 /* main */
 /* ================================================ */
@@ -918,5 +932,5 @@ input[type=text], input[type=email], textarea {
 }
 
 ::placeholder {
-  color: var(--color-text-primary);
+    color: var(--color-text-primary);
 }
