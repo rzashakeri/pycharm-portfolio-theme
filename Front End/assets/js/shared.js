@@ -68,6 +68,17 @@ function changeProjectsIcon() {
     }
 }
 
+function showSocialMediaIcons() {
+    let element = document.querySelector(".social-media");
+    if (element.style.display === "none") {
+        element.setAttribute("style", "display: flex;");
+    } else {
+        element.setAttribute("style", "display: none;");
+    }
+    if (window.matchMedia("(max-width: 600px)").matches && element.style.display === "none") {
+        element.setAttribute("style", "display: flex;");
+    }
+}
 
 let docTitle = document.title;
 window.addEventListener("blur", () => {
