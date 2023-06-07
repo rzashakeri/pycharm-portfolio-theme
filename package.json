@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard": "^33.0.0"
+  },
+  "dependencies": {
+    "atropos": "^1.0.2"
+  }
+}
